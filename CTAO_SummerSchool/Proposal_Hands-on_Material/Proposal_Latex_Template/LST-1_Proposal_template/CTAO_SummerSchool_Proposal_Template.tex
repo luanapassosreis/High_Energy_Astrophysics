@@ -1,0 +1,130 @@
+% ------------------------------------------------------
+%
+% LST Proposal Template
+%
+% This templates uses the lstproposal document class.
+% You will need the "framed" LaTeX package to use it.
+%
+% Please email  alessandro.carosi@inaf.it  and damgreen@mpp.mpg.de if you
+% have any questions about this template.
+%
+% The page limit for the propoal is 5 pages.  
+% Try and keep it under 5 pages. 
+%
+% ------------------------------------------------------
+
+% Do not change these options
+\documentclass[10pt]{lstproposal}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+
+
+\begin{document}
+	
+	%
+	% IMPORTANT:
+	%
+	% You cannot use floating environments such as the figure or
+	% table environment.
+	%
+	%
+	% In order to see what details are expected in the various
+	% sections, have a look at the PDF output.
+	%
+
+        % Please Provide Title of Proposal
+        \Title{Title of Proposal}
+
+        % Please provide which LST Physics Working Group : GAL, EGAL, TRANS, FUND, this proposal would fall under
+        %\Group{GAL, EGAL, TRANS}
+
+        % Please Provide Information of PI: Name, Institute, email
+        \PI{Name Surname}{University}{Email address}
+        \PI{Name Surname}{University}{Email address}
+	\PI{Name Surname}{University}{Email address}
+        % Please Provide Information on the Source. You can submit more than one source, but please provide all information for each source.
+
+            % 1 = Name
+            % 2 = RA in degrees
+            % 3 = Declination in degrees
+            % 4 = Minimum Zenith
+            % 5 = Maximum Zenith
+            % 6 = NSB Conditions, either moon or dark
+            % 7 = Wobbles, either standard or custom values. If custom, please put them in the wobble format of: W0.40+000 W0.40+090.  Standard wobble offset is 0.4 degrees.  
+            % 8 = Requested Hours.  
+            % 9 = Requested Observation Type:
+                % Type 1: Fast ToO (minutes to hours timescale)
+                % Type 2: Joint MWL Observations - Not including MAGIC
+                % Type 3: Slow ToO  (days to weeks)
+                % Type 4: Periodic Observations (specify periodicity)
+                % Type 5: None
+
+                %For observation cateogries, please see https://www.lst1.iac.es/schedule/.  Requesting a Type 1 observation would fall into a Fast ToO observation catagory, all other requested priorites would be catagory 4 observations.  
+
+            \Source{Name}{RA}{DEC}{MinZd}{MaxZd}{Dark}{Standard Wobble}{50 hr}{Fast ToO -- Slow ToO -- Periodic -- Joint MWL -- None}
+
+%        \MAGICRationale{250}{
+            % Describe the rational for requesting both MAGIC+LST time and LST mono time here.  Please also name the specific MAGIC proposal this is associated with.  
+%        }
+
+	% Scientific rationale.
+	\ScientificRationale{500}{
+		% Insert your scientific rationale here.
+	}
+	
+	% Publication Plans.
+	\PublicationPlans{100}{
+		% Insert your immediate objectives here.
+	}
+		
+	% Technical justification.
+	\TechnicalJustification{100}{
+		% Insert your technical justification here.
+	}
+
+        \PreviousObservations{250}{
+            % Describe previous observations and possible reasons for re-submission here.  Figures related to previous observations should be included here. Such figures of merit include but are not limited to: theta-sq plots, spectra, lightcurves, and skymaps. 
+    
+        }
+ 
+	\AdditionalFigures{4}{
+		% Insert any additional figures and graphics here.
+		%
+		% Allowable file types are:
+		% If you are compiling using PDFLaTeX: JPG, PNG, PDF, EPS
+		% If you are compiling with plain LaTeX: EPS only
+		%
+		% Example:
+		% \includegraphics[height=200px]{Filename.eps}
+
+	}
+
+%        \Theses{5}{
+            % If there are any theses associated with this proposal
+            % Please list them here, along with student's name, subject
+            % and expected graduation date
+        
+%        }
+
+	% References.
+	\References{
+		% Insert your references here.
+		% References are added in pairs:
+		%
+		% \ReferencePair{A}{B}
+		%
+		% A appears in the left column, B in the right column.
+		%
+		% Examples:
+		% \ReferencePair
+		%    {Binette et al. 1994, A\&A, 292, 13}
+		%    {Finkelman et al. 209, MNRAS, 390,  969}
+		% \ReferencePair
+		%    {de Zeeuw \& Merritt, 1989, ApJ, 343, 617}
+		%    {}
+	}
+\end{document}
